@@ -6,8 +6,6 @@ import Typography from '@mui/material/Typography'
 import { FooterNavigation, FooterSocialLinks } from '@/components/footer'
 
 const Footer: FC = () => {
-  // @ts-ignore
-  // @ts-ignore
   return (
     <Box
       component="footer"

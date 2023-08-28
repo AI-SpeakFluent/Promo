@@ -10,14 +10,14 @@ const HomeNewsLetter: FC = () => {
     const [email,setEmail] = useState('');
     const [status,setStatus] = useState('');
 
-    const handleChange = (e: { target: { name: any; value: any } }) => {
+    const handleChange = (e: { target: { name: any; value: any } }): void => {
         const {name, value} = e.target
         if (name === 'email' ){
             return setEmail(value)
         }
     }
 
-    const handleSubmit = (e: { preventDefault: () => void }) => {
+    const handleSubmit = (e: { preventDefault: () => void }): void => {
         const data = {"email": email}
 
         fetch("/", {
